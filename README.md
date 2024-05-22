@@ -3,17 +3,11 @@
 In this assignment your task is to implement and test a number of different
 chatbots.
 
-## Getting Started
-
-Put all the code you write into [a4.h](a4.h). There is a
-helper function there called `converse` that you can use to help test your
-chatbots. **You can change `converse` if you like**. 
-
 Among other files, [a4.h](a4.h) includes [Chatbot.h](Chatbot.h), which has the
 `Chatbot` base class your classes must inherit from. Your inheriting classes
 should implement all the virtual methods in a sensible way. We want to see you
 use good programming style and make good use of C++'s object-oriented
-features.
+features.s
 
 
 ## Chatbot 1: The User
@@ -261,70 +255,15 @@ deetee> I know the date and time!
 ```
 
 
-## Chatbot 8: Turing Bot
-
-[The Turing Test](https://en.wikipedia.org/wiki/Turing_test>) is a famous
-thought experiment that some computer scientists believe can be used to
-determine if a program has human-level intelligence. The test works by having
-a program (that we are testing for intelligence) and an ordinary adult person
-have a text-only conversation using a chatbot-like interface. If the program
-can fool the human into thinking it's a real person, then, some say, the
-program has human-level intelligence.
-
-Implement an **original** and interesting chatbot class called `Smart_bot`
-that tries to pass the Turing test. Make it is as smart and feature-rich as
-you can. To simplify things a bit, it's okay if your chatbot is restricted to
-one particular topic, as long as it is interesting and tries to be intelligent
-in some way. You can expand upon ideas from the previous bots, or try
-something new.
-
-Please make something original and interesting, something that you would be
-proud to show off to others. **Do a little bit of research on the web to get
-ideas for other kinds of chatbots**. Low-effort chatbots won't get full marks.
-
-In the source code comments for this chatbot, please include some description
-of the techniques your chatbot uses, and provide links for any research you
-did or help you received.
 
 Your `Smart_bot` should be constructed like this:
 
 ```cpp
 Smart_bot smart_bot("Alan");
-```
+``` 
 
 
-## Submit Your Work
 
-Please put all your code for the chatbots into [a4.h](a4.h), and put all your
-testing code into [a4_test.cpp](a4_test.cpp). Only [a4_test.cpp](a4_test.cpp)
-should have a `main()`. The marker will test your code by `#include`-ing your
-[a4.h](a4.h) into their own testing file. They will use this
-[makefile](makefile) to compile your program.
-
-Compress your [a4.h](a4.h) and [a4_test.cpp](a4_test.cpp) files into a zip
-file named `a4_submit.zip`, e.g. using this command in Linux:
-
-```
-$ zip a4_submit.zip a4.h a4_test.cpp
-```
-
-Include in the `a4_submit.zip` any files needed to compile and run your
-`a4_test.cpp`. **Don't** include [cmpt_error.h](cmpt_error.h), `Chatbot.h`, or
-`dog_sounds.txt`: the marker will put copies of those files into the same
-folder as your code when they test your program.
-
-When it's ready, submit your `a4_submit.zip` on Canvas.
-
-
-## Basic Requirements
-
-Before we give your program any marks, it must meet the following basic
-requirements:
-
-- Your test program, and the markers test program, must compile on Ubuntu
-  Linux using the standard course [makefile](makefile), e.g.:
-
-  A program is considered to have no memory error if:
 
     $ valgrind
 
@@ -344,47 +283,3 @@ If your program meets all these basic requirements, then it will graded using
 the marking scheme below.
 
 
-## Marking Scheme
-
-### Source Code Readability (6 marks)
-
-- All names of variables, functions, structs, classes, etc. are sensible,
-  self-descriptive, and consistent.
-
-- Indentation and spacing is perfectly consistent and matches the structure of
-  the program. All blank lines and indents should have a reason.
-
-- All lines are 100 characters in length, or less.
-
-- Comments are used when appropriate, e.g to describe code that is tricky or
-  very important. There are no unnecessary comments, and no commented-out
-  code.
-
-- Appropriate features of C++ are used in an appropriate way. For example, do
-  **not** use a feature of C (like C-style strings) when there is a better C++
-  feature (e.g. the standard `string` class). Don't use any features you don't
-  understand.
-
-- Overall, the source code is easy to read and understand.
-
-### Chatbots 1 to 7 (14 marks)
-
-**2 marks** for each complete and correct chatbot that works as intended.
-
-Make sure that each chatbot has a *exactly* the constructor given in the
-description/example. Each missing or incorrect constructor will result in a
-penalty of at least -0.5 marks.
-
-**Note**: The wording of the `User_bot` is confusing, and so any reasonable
-interpetation is okay. The really important thing about the `User_bot` is that
-it can be used to test the other chatbots in a function like `converse`.
-
-
-### Chatbot 8 (5 marks)
-
-**4 marks** for an interesting and original chatbot. This chatbot should have
-as many features as possible (e.g. at the very least as many features as
-chatbot 2 and 4 combined). Obviously low-effort chatbots will not get full
-marks.
-
-**1 mark** for describing techniques the chatbot uses, and links to research.
