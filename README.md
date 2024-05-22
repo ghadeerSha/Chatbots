@@ -260,12 +260,15 @@ Your `Smart_bot` should be constructed like this:
 
 ```cpp
 Smart_bot smart_bot("Alan");
-``` 
+Smart_bot provides information on which two colors combine to produce a specific color.
+```
+<img width="332" alt="chatbot_colorBot" src="https://github.com/ghadeerSha/Chatbots/assets/167367841/6a3818be-2a52-46b6-a816-1b12c18f3611">
 
 
 
 
-    $ valgrind
+
+  valgrind
 
   - In the `LEAK SUMMARY`, `definitely lost`, `indirectly lost`, and `possibly
     lost` must all be 0.
@@ -275,11 +278,6 @@ Smart_bot smart_bot("Alan");
   - It is usually okay if **still reachable** reports a non- zero number of
     bytes.
 
-- **You must include the large comment section with student info and the
-  statement of originality**. If your submitted file does not have this, then
-  we will assume your work is not original and it will not be marked.
-  
-If your program meets all these basic requirements, then it will graded using
-the marking scheme below.
+
 
 
